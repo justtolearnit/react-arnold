@@ -13,8 +13,6 @@ function App() {
     <Todo title='React' />,
     <Todo title='Angular' />,
     <Todo title='MongoDB' />
-    <Modal />
-    <Backdrop  />
     </div>
   );
 }
