@@ -1,11 +1,15 @@
-function Todo (props) {
+function Todo (props) { 
+    // 'dyanamic' is a random word its not a keyword, you can use anything. 
+    
+
+    
     return(
 
     <div className="card">
         <h1>{props.title}</h1>
-    <div className='actions'>
-        <button className='btn'>Delete</button>
-    </div>
+        <div className='actions'>
+            <button className='btn' >Delete</button>
+        </div>
     </div>
 
     );
