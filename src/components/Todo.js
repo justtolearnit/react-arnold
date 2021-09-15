@@ -11,7 +11,10 @@ function Todo (property) {
     function clickHandler(){
         setModalOpen(true);
     }
-    
+    function onCancel(){
+        setModalOpen(false)
+    }
+  
     
     
     return(
@@ -21,8 +24,8 @@ function Todo (property) {
         <div className='actions'>
             <button className='btn' onClick={clickHandler}>Delete</button>
         </div>
-        {isModalOpen ?  <Modal /> : null }
-        {isModalOpen ?  <Backdrop /> : null }
+        {isModalOpen && <Modal onClick={onCancel} />  }
+        {isModalOpen && <Backdrop onClick={onCancel} />  }
        
     </div>
 
