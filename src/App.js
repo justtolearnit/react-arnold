@@ -1,17 +1,7 @@
-import Todo from './components/Todo'
-
-
-
 function App() {
-
-    
- 
-  
   return (
     <div>
-    <Todo title='React' />,
-    <Todo title='Angular' />,
-    <Todo title='MongoDB' />
+      <h1>Hello, Everything is removed for the new begining...</h1>
     </div>
   );
 }
