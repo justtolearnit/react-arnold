@@ -1,6 +1,6 @@
 import AllMeetupsPage from './components/pages/AllMeetupsPage';
 import Favorites from './components/pages/Favorites';
-import NewMeetUpsPage from './components/pages/NewMeetupsPage';
+import NewMeetUpsPage from './components/pages/regardingMeetup/NewMeetupsPage';
 
 import { Route } from 'react-router-dom';
 import Layout from './components/layouts/Layout';
