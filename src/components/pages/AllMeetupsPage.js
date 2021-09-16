@@ -1,18 +1,35 @@
+import Cards from "../ui/Cards";
 import MeetupList from "./regardingMeetup/MeetupList";
 
+
 const dummy_data = [
-    {'id':1,title:'Meetup with Muhammed',description:"The meeting was very nice and wonderful,It's was a nice experience, I thank Allah for this wonderful Life!", image:"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/220px-Image_created_with_a_mobile_phone.png"},
-    {'id':2,title:'Meetup with Ahamed',description:"The meeting was very nice and wonderful,It's was a nice experience, I thank Allah for this wonderful Life!", image:"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/220px-Image_created_with_a_mobile_phone.png"},
-    {'id':3,title:'Meetup with Smayah',description:"The meeting was very nice and wonderful,It's was a nice experience, I thank Allah for this wonderful Life!", image:"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/220px-Image_created_with_a_mobile_phone.png"},
-    {'id':4,title:'Meetup with Saji',description:"The meeting was very nice and wonderful,It's was a nice experience, I thank Allah for this wonderful Life!", image:"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/220px-Image_created_with_a_mobile_phone.png"},
-]
+    {
+      id: 'm1',
+      title: 'This is a first meetup',
+      image:
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/2560px-Stadtbild_M%C3%BCnchen.jpg',
+      address: 'Meetupstreet 5, 12345 Meetup City',
+      description:
+        'This is a first, amazing meetup which you definitely should not miss. It will be a lot of fun!',
+    },
+    {
+      id: 'm2',
+      title: 'This is a second meetup',
+      image:
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/2560px-Stadtbild_M%C3%BCnchen.jpg',
+      address: 'Meetupstreet 5, 12345 Meetup City',
+      description:
+        'This is a first, amazing meetup which you definitely should not miss. It will be a lot of fun!',
+    },
+  ];
 function AllMeetupsPage(){
     return(
+      <Cards>
        <section>
-                <h1>All Meetups</h1>
                <MeetupList allMeetups={dummy_data}/>
         
        </section>
+      </Cards>
     );
 }
 export default AllMeetupsPage;

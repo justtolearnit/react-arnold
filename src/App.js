@@ -1,15 +1,14 @@
 import AllMeetupsPage from './components/pages/AllMeetupsPage';
 import Favorites from './components/pages/Favorites';
 import NewMeetUpsPage from './components/pages/NewMeetupsPage';
-import MainNavigation from './components/layouts/MainNavigation'
 
 import { Route } from 'react-router-dom';
+import Layout from './components/layouts/Layout';
 
 
 function App() {
   return (
-    <div>
-      <MainNavigation />
+  <Layout>
       <Route path='/' exact>
         <AllMeetupsPage />
       </Route>
@@ -21,7 +20,7 @@ function App() {
       <Route path='/favorites'>
         <Favorites />
       </Route>
-    </div>
+    </Layout>
   );
 }
 export default App;
