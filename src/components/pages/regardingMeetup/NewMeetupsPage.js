@@ -27,8 +27,6 @@ function NewMeetupsPage(){
             
             
         };
-        console.log(newMeetupDetails);
-        console.log({newMeetupDetails});
     }
 
 
